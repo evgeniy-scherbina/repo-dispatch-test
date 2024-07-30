@@ -13,3 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: run tests
         run: echo "run tests"
+      - name: fail
+        run: "sh -c 'exit 1'"
