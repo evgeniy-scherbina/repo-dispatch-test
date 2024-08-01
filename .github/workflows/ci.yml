@@ -15,3 +15,4 @@ jobs:
         run: echo "run tests"
       - name: fail
         run: "sh -c 'exit 1'"
+
