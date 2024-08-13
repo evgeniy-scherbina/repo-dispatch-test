@@ -16,4 +16,8 @@ jobs:
 #      - name: fail
 #        run: "sh -c 'exit 1'"
 
+      - name: "print event sha"
+        run: echo ${{ github.event.client_payload.sha }}
 
+      - name: "print event ref"
+        run: echo ${{ github.event.client_payload.ref }}
