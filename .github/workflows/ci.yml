@@ -5,7 +5,7 @@ env:
 
 on:
   repository_dispatch:
-    types: [my-event]
+    types: [repo-dispatch-trigger-commit]
 
 jobs:
   test:
