@@ -53,3 +53,5 @@ jobs:
         run: echo "$MATRIX_CONTEXT"
       - name: Print event_name
         run: echo ${{ github.event_name }}
+      - name: "Print is push"
+        run: echo ${{ github.event_name == 'push' }}
