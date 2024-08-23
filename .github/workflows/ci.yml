@@ -51,3 +51,5 @@ jobs:
         env:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
+      - name: Print event_name
+        run: echo ${{ github.event_name }}
